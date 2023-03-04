@@ -14,13 +14,14 @@ void rev_string(char *n)
 	{
 		i++;
 	}
- 	i--;
+	i--;
 	for (j = 0; j < i; j++, i--)
 	{
-                temp = *(n + j);
+		temp = *(n + j);
 		*(n + j) = *(n + i);
 		*(n + i) = temp;
 	}
+}
 /**
  * infinite_add - add 2 numbers together
  * @n1: text representation of 1st number to add
@@ -37,7 +38,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	while (*(n1 + i) != '\0')
 		i++;
 	while (*(n2 + j) != '\0')
-		j++;
+	j++;
 	i--;
 	j--;
 	if (j >= 0 || i >= 0 || overflow == 1)
@@ -68,4 +69,3 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	rev_string(r);
 	return (r);
 }
-
