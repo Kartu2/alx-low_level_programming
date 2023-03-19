@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
-		
+
 /**
  * _strdup - duplicate to new memory space location
  * @str: char
@@ -19,7 +19,7 @@ char *_strdup(char *str)
 
 	while (str[i] != '\0')
 	i++;
-	
+
 	aaa = malloc(sizeof(char) * (i + 1));
 	if (aaa == NULL)
 		return (NULL);
